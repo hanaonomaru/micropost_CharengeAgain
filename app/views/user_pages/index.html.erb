@@ -1,0 +1,7 @@
+<% if current_user.present? %>
+    <p>Welcome! <%= current_user.name %>さん</p>
+<% else %>
+    <p>Hello! ゲストさん</p>
+<% end %>
+<h1>UserPages#index</h1>
+<p>Find me in app/views/user_pages/index.html.erb</p>
