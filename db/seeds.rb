@@ -10,3 +10,7 @@ Post.create!(
     content: "もう6月かぁ",
     user_id: 1,
 )
+Post.create!(
+    content: "Hello!",
+    user_id: 4444,
+)

@@ -1,0 +1,23 @@
+<h1>Post#index</h1>
+<p>Find me in app/views/post/index.html.erb</p>
+
+<table>
+    <tr>
+        <td>Post</td>
+        <td>User</td>
+    </tr>
+    <% @posts.each do |p| %>
+    <tr>
+        <td><%= p.content %></td>
+        <td><%= p.user_id %></td>
+    </tr>
+    <% end %>
+</table>
+
+
+
+<%= form_with model: @posts, url: 'post/index' do |f| %>
+    <%= f.text_area :content %><br>
+    <%= f.submit "ポチッとな" %>
+<% end %>
+
